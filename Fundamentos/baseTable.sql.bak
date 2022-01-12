@@ -9,11 +9,5 @@ CREATE TABLE tFuncionario (
 	email VARCHAR(50),
 	data_admissao DATE,
 	cargo_id int,
-	departamento_id int
-);
-
-CREATE TABLE departamento (
-	departamento_id int PRIMARY key,
-	departamento_nome varchar(50),
-	localidade_id int
+	departamento int
 );

@@ -17,3 +17,7 @@ CREATE TABLE departamento (
 	departamento_nome varchar(50),
 	localidade_id int
 );
+
+ALTER TABLE tFuncionario ADD CONSTRAINTS FK_FUNC_DEP FOREIGN KEY (departamento_id) REFERENCES departamento(departamento_id);
+
+CREATE UNIQUE INDEX IX_EMAIL_EMP ON tFuncionario(email);

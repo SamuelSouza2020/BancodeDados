@@ -7,3 +7,6 @@ CREATE TABLE games(
     game_plataforma varchar(30),
     game_estudio varchar(30)
 );
+
+INSERT INTO games(game_nome, game_plataforma, game_estudio) VALUES 
+('Halo', 'Console', 'Engio');

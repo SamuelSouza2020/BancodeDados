@@ -3,3 +3,7 @@ SET @STRING_TRIM = '   7 espaço após essa frase.';
 SELECT @STRING_TRIM + 'Proxima string.' AS Com_Espaço;
 
 SELECT LTRIM (@STRING_TRIM)+ 'Proxima string.' AS Sem_Espaço;
+
+SELECT TOP 10
+UPPER(FirstName) FirstName
+FROM [Person].[Person]

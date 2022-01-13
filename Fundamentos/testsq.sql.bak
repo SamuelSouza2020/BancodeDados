@@ -6,3 +6,6 @@ CREATE TABLE Tb_Pessoa
 	Idade INT CHECK (Idade > 18),
 	Data DATE DEFAULT GETDATE()
 )
+
+SELECT SUBSTRING(FirstName, 1, 1), LastName, FirstName
+	FROM Person.Person;
